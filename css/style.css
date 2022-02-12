@@ -106,7 +106,7 @@ header nav ul {
 header nav .menu {
     text-align: center;
     padding-top: 0.625em;
-    /* 10px */
+  
 }
 
 header nav .menu li a {
@@ -206,6 +206,7 @@ footer a:hover {
 
 .boton i{
     font-size: 95%;
+    margin-left: 5px;
 }
 
 .boton:hover{
@@ -248,7 +249,7 @@ footer a:hover {
         position: relative;
         width: 100px;
         margin: 0 auto;
-        /* text-align: center; */
+
         font-weight: 700;
        color: var(--colorPrincipal);
        font-weight: 700;
@@ -256,6 +257,7 @@ footer a:hover {
     main section .underline hr{
         width: 100%;
         border-color: var(--colorPrincipal);
+        background-color: var(--colorPrincipal);
     }
 
     main section .underline span {
@@ -298,6 +300,7 @@ footer a:hover {
 
     .enlace i{
         font-size: 95%;
+        margin-left: 5px;
     }
 
     main #ourservices article div i{
@@ -314,6 +317,7 @@ footer a:hover {
 main section h3{
     font-weight: 700;
     font-size: 110%;
+    margin-top: var(--marginGrid);
 }
 main section h4{
     color: var(--colorPrincipal);
@@ -324,29 +328,231 @@ main section p{
     color: #777;
     line-height: 1.10em;
 }
-main .aboutus figure{
+main #aboutus figure{
     width: 90%;
     margin: 0 auto;
 }
 
-main .aboutus .marco{
+main #aboutus .marco{
     border: 3px solid var(--colorPrincipal);
     transform: rotateZ(10deg);
     transition: 1s;
 }
-main .aboutus .marco img{
+main #aboutus .marco img{
     transform: rotateZ(-10deg);
     transition: 1s;
 }
-main .aboutus figure:hover :is(.marco, img){
+main #aboutus figure:hover :is(.marco, img){
     transform: rotateZ(0deg);
 }
-main .aboutus{
+main #aboutus{
     margin-bottom: 40px;
+    
+}
+main #aboutus .container .underline{
+    margin-bottom: var(--marginGrid)
 }
 
 /* fin about us*/
 
+
+/* inicio blog*/
+
+
+main #blog .container h1{
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+    padding-top: var(--marginGrid);
+
+}
+main #blog .container span{color: var(--colorPrincipal)}
+
+main #blog .container .underline{
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+
+    font-weight: 700;
+   color: var(--colorPrincipal);
+   font-weight: 700;
+}
+main #blog hr{
+    width: 100%;
+    border-color: var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+}
+
+main #blog .container .underline span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main #blog .flex-blog{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+
+}
+main #blog .flex-blog article{
+    width: calc(50% - var(--marginGrid)*2) ;
+    margin: var(--marginGrid);
+    position:relative;
+    
+}
+
+main #blog article .date{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fa573ac2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em
+    
+    
+}
+main #blog article a{
+    display: block;
+    margin-top: 1em;
+}
+
+main #blog article h4{
+    font-weight: 700;
+}
+main #blog article .date p{
+    
+    color: white;
+    font-weight: 700;
+    font-size: 0.75em;
+
+}
+/* fin our blog*/
+/* inicio menu*/
+
+main #menu{
+  
+    padding: 3em;
+    background-color: #21242e;
+}
+
+
+#menu  h1{
+    color: white;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+    padding-top: var(--marginGrid);
+
+}
+#menu span{color: var(--colorPrincipal)}
+
+#menu .underline{
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    font-weight: 700;
+   color: var(--colorPrincipal);
+   font-weight: 700;
+}
+#menu .underline hr{
+    width: 100%;
+    border-color: var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+}
+
+#menu .underline span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-container .hot-offers-left{
+    padding: 0;
+    margin-top: 2em;
+   
+}
+
+.menu-container .hot-offers-left ul li{
+
+    padding: 0.25em;
+    padding-left: 1em
+   
+}
+
+.menu-container .hot-offers-left ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.75em;
+
+}
+
+.menu-container .hot-offers-left ul .activo{
+    background-color: #fa573a;
+    border-radius: 5px;
+
+}
+
+.menu-container .hot-offers-left h2{
+    color: white;
+    text-align: left;
+    font-family: var(--fuentePrincipal);
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-top: 2.25em;
+}
+.menu-container .hot-offers-left hr{
+    width: 30px;
+    text-align: left;
+    margin: 0;
+    margin-top: 0.5em;
+    border-color: var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+
+}
+.menu-container .hot-offers-left p{
+    padding-top: 0.5em;
+    font-size: 0.65em;
+    color: white;
+    line-height: 1.5em; 
+
+}
+
+.menu-container .hot-offers-right{
+    padding: 0;
+    margin-top: 2em;
+}
+
+
+.menu-container .hot-offers-right article h3{
+    color: white;
+    font-size: 0.60em;
+    font-weight: 700px;
+    padding-top: 0.50em;
+}
+.menu-container .hot-offers-right article p{
+    padding-top: 0.75em;
+    font-size: 0.55em; 
+    color: white;
+    
+}
+.menu-container .hot-offers-right article .enlace{
+    font-size: 0.60em;
+    display: block;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+/* fin menu*/
+
+/* ------------------------------------------------- */
 
 /* media queries 600px */
 @media(min-width: 37.5em){
@@ -362,15 +568,15 @@ main .aboutus{
     main #ourservices .flex article:last-child{
         width: 100%;
     }
-    main .aboutus .flex{
+    main #aboutus .flex{
         display: flex;
     }
-    main .aboutus .columna{
+    main #aboutus .columna{
         padding: 1em;
     }
-   
-}
+
 /* media queries 768px */
+
 
 @media(min-width: 48em) {
 
@@ -385,6 +591,10 @@ main .aboutus{
     footer {
         text-align: left;
     }
+    main #blog article .date{
+        width: 70px;
+        height: 70px;
+    }
     
 }
 
@@ -392,7 +602,7 @@ main .aboutus{
 
 @media(min-width: 62.750em) {
 
-    header nav .hamburguesa {
+ header nav .hamburguesa {
         display: none;
     }
 
@@ -422,5 +632,93 @@ main .aboutus{
     main #ourservices .flex article:last-child{
         width: calc(33.333% - var(--marginGrid)*2);
     }
+
+    main #blog .flex article{
+        width: calc(33.333% - var(--marginGrid)*2) ;
+        
+    }
+    main #blog article h3{
+        font: size 1.15em;em;
+    }
+    
+    main #blog article .date{
+        width: 20%;
+        height: 20%;
+     
+    }
+    main #blog article .date p{
+    
+        font-size: calc(var(--fontSize)*1.3)
+    
+    }
+    main #blog article .date{
+        width: 100px;
+        height: 100px;
+    } 
+
+    main #menu{
+        height: 100vh;
+    }
+
+    #menu .menu-container{
+        padding-top: 3em;
+        display: flex;
+        max-width: 52%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .menu-container .hot-offers-left{
+        max-width: 30%; 
+    }
+    .menu-container .hot-offers-left h2{
+        margin-top: 4em;
+        font-size: 1em;
+    }
+    .menu-container .hot-offers-left ul li{
+        padding: 0.5em;
+  
+    } 
+    .menu-container .hot-offers-left ul li a{
+        font-size: 1em;
+    }
+    .menu-container .hot-offers-left hr{
+        width: 50px;
+        margin-top: 0.75em;    
+    }
+    .menu-container .hot-offers-left p{
+        padding-top: 0.5em;
+        font-size: 0.75em;
+    }
+    .menu-container .hot-offers-right{
+        max-width: 70%;     
+    }
+    
+    .menu-container .hot-offers-right article{
+        display: flex;
+        justify-content: space-between;
+       margin-bottom: 2em;       
+    }
+    .menu-container .hot-offers-right figure{
+        max-width: 20%;
+        margin-left: 6em;    
+    }
+    .menu-container .hot-offers-right .meal-option{
+        max-width: 80%;
+        padding-left: 1.5em;
+        margin-top: 0;
+    }
+    .menu-container .hot-offers-right article h3{
+        font-size: 0.8em;
+       margin: 0;
+       padding: 0;
+    }
+    .menu-container .hot-offers-right article p{   
+        font-size: 0.75em;   
+    }
+    .menu-container .hot-offers-right article .enlace{
+        font-size: 0.75em;
+    }
+    
+    
     
 }
