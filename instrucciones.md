@@ -1,2 +1,0 @@
-Realizar un diseño siguiendo los layout de SeccionMenu y SeccionBlog. 
-Fecha de entrega, lunes 14 de febrero. La entrega se hará a través de una canal de discord de prácticas y ahí se subirá nuestro nombre + enlace a github. 
